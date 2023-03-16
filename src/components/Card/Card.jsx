@@ -1,7 +1,7 @@
 import React from "react";
 import avatar from "../../img/Hansel.png";
 import logo from "../../img/Logo.svg";
-import picture from "../../img/picture.png";
+import pic from "../../img/picture.png";
 import { CardContainer, CardHeader, Logo } from "./Card.styled";
 
 export const Card = () => {
@@ -9,7 +9,7 @@ export const Card = () => {
     <CardContainer>
       <CardHeader>
         <Logo src={logo} alt="Logo" />
-        <img src={picture} alt="Image" />
+        <img src={pic} alt="pic" />
       </CardHeader>
       <img src={avatar} alt="User avatar" />
       <p> 777 tweets</p>

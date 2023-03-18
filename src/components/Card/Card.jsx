@@ -1,5 +1,4 @@
 import logo from "../../img/Logo.svg";
-import pic from "../../img/picture.png";
 import { Box } from "./../commons/Box";
 import {
   CardContainer,

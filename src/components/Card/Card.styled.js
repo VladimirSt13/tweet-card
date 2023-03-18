@@ -88,6 +88,8 @@ export const Avatar = styled.div`
   border-radius: 50%;
   overflow: hidden;
   background-color: #5736a3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), 0px -2px 4px #ae7be3,
+    0px 4px 2px #fbf8ff;
 
   & img {
     width: 100%;

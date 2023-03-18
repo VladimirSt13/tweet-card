@@ -3,7 +3,7 @@ import { Card } from "./components/Card/Card";
 import { Box } from "./components/commons/Box";
 import initialUsersData from "./usersData.json";
 
-function App() {
+export const App = () => {
   const [usersData, setUsersData] = useState(initialUsersData);
   const [following, setFollowing] = useState(
     JSON.parse(localStorage.getItem("following")) || []
@@ -36,6 +36,7 @@ function App() {
       justifyContent="center"
       flexWrap="wrap"
       p={3}
+      as="ul"
     >
       {usersData.map((user) => (
         <Card
@@ -47,6 +48,6 @@ function App() {
       ))}
     </Box>
   );
-}
+};
 
 export default App;

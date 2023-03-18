@@ -22,7 +22,7 @@ export const Card = ({ user, handleFollow, isFollowing }) => {
     <CardContainer>
       <CardHeader>
         <Logo src={logo} alt="Logo" />
-        <img src={pic} alt="pic" />
+        {/* <img src={pic} alt="pic" /> */}
       </CardHeader>
       <UserContainer>
         <AvatarContainer>

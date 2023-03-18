@@ -1,6 +1,7 @@
 import styled from "styled-components";
+import pic from "../../img/picture.png";
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.li`
   position: relative;
   display: flex;
   flex-direction: column;
@@ -20,7 +21,14 @@ export const CardContainer = styled.div`
 
 export const CardHeader = styled.div`
   position: relative;
+  height: 214px;
+  flex-shrink: 0;
   padding: 26px 36px 28px;
+  background-image: url(${pic});
+  background-size: 308px 168px;
+  background-position: center;
+  background-repeat: no-repeat;
+
   &:after {
     content: "";
     position: absolute;
@@ -119,10 +127,12 @@ export const CardButton = styled.button`
   text-transform: uppercase;
   color: #373737;
 
+  cursor: pointer;
+
   transition: background-color 250ms linear;
 
   &:hover,
   :focus-visible {
-    background-color: #d3a9ff;
+    background: ${(props) => (!props.isFollowing ? `#d3a9ff` : `#47a382`)};
   }
 `;
